@@ -1,5 +1,5 @@
 ---
-title: Extensible Delegation for DNS: Base Protocol
+title: "Extensible Delegation for DNS: Base Protocol"
 abbrev: DELEG
 docname: draft-ietf-deleg-base-latest
 date: {DATE}
