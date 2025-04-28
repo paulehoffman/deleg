@@ -122,7 +122,8 @@ In the Domain Name System {{!STD13}}, subdomains within the domain name hierarch
 
 The proposed DELEG record type remedies this problem by providing extensible parameters to indicate capabilities and additional information, such as glue that a resolver may use for the delegated authority. It is authoritative and thus signed in the parent side of the delegation making it possible to validate all delegation parameters (names and glue records) with DNSSEC.
 
-This document only shows how DELEG can be used instead of or along side a NS record to create a delegation. Future documents can use the extensible mechanism for more advanced features like connecting to a name server with an encrypted transport.
+This document only shows the base protocol for the DELEG record type.
+Future documents will show how DELEG can be used instead of or along side a NS record to create a delegation and other extensions to DNS delegation.
 
 ## Terminology
 
