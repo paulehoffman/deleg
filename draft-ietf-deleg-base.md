@@ -140,7 +140,9 @@ Terminology regarding the Domain Name System comes from {{?BCP219}}, with additi
 
 # DELEG Record Type
 
-The DELEG record uses a new resource record type, whose contents are identical to the SVCB record defined in {{?RFC9460}}. For extensions SVCB and DELEG use Service Parameter Keys (SvcParamKeys) and new SvcParamKeys that might be needed also will use the existing IANA Registry. 
+The DELEG record uses a new resource record type, whose wire format is identical to the SVCB record defined in {{?RFC9460}}.
+Because the parts of DELEG differs in interpretation from SVCB, it has its own resource record type nuber (TBD) and associated IANA registry for extentions.
+See {{iana-cons}} for details on these.
 
 ## Differences from SVCB
 
@@ -191,7 +193,7 @@ In order for the validator to understand that the delegation uses DELEG this dra
 
 A Validating Stub Resolver that is DELEG aware has to use a Security-Aware Resolver that is DELEG aware and if it is behind a forwarder this has to be security and DELEG aware as well.
 
-# IANA Considerations
+# IANA Considerations {#iana-cons}
 
 IANA is requested to allocate the DELEG RR in the Resource Record (RR) TYPEs registry, with the meaning of "enchanced delegation information" and referencing this document.
 
